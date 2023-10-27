@@ -6,6 +6,7 @@ import { ToastContainer } from 'react-toastify';
 import { AuthProvider } from './context/AuthProvider';
 import { DialogProvider } from './context/DialogProvide';
 import AuthRedirect from './pages/auth';
+import HomePage from './pages/home';
 
 function App() {
   const [openDialog, setOpenDialog] = useState<boolean>(false)
@@ -63,7 +64,8 @@ function App() {
                 />
               ))}
 
-              <Route path='*' element={<Navigate to={'/login'} />} />
+<Route path='*' element={<HomePage/>} />
+              {/* <Route path='*' element={<Navigate to={'/login'} />} /> */}
 
             </Routes>
           }
