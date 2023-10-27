@@ -87,13 +87,9 @@ function App() {
           Learn React
         </a>
       </header>
-<<<<<<< HEAD
-    </div>
-=======
     </div> */}
     </BrowserRouter>
 
->>>>>>> base-react-project/my-base-v1
   );
 }
 
